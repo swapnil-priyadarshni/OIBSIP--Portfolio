@@ -1,0 +1,80 @@
+@import "../../Styles/mixins.scss";
+
+.resume {
+  background-color: var(--rich-black);
+
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 8rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &_title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--extra-color);
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-block: 21px 19px;
+  }
+
+  &_education-container {
+    margin-left: 47px;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+    }
+  }
+
+  &_card:not(:last-child) {
+    padding-bottom: 50px;
+  }
+
+  &_card {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -47px;
+      height: 13px;
+      width: 13px;
+      background: var(--eerie-black);
+      border-radius: 50%;
+      border: 2px solid #232935;
+      z-index: 99;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -40px;
+      height: 100%;
+      width: 1px;
+      background: #232935;
+    }
+  }
+}

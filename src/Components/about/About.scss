@@ -1,0 +1,56 @@
+@import "../../styles/mixins.scss";
+
+.about {
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &_left {
+    overflow: hidden;
+  }
+
+  &_left img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  h4 {
+    color: var(--extra-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin-block: 18px;
+  }
+
+  &_right-info-container {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &_right-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    p:nth-child(2) {
+      position: absolute;
+      left: 30%;
+
+      @include respond(phone) {
+        left: 30%;
+      }
+    }
+  }
+}

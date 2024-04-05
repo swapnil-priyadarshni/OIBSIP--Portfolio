@@ -1,0 +1,58 @@
+@import "../../Styles/mixins.scss";
+
+.hero {
+  margin-top: 7rem;
+  background-image: url("../../assets/davis-assets/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &_left {
+    padding-block: 5rem;
+  }
+  h3 {
+    color: var(--extra-color);
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 1;
+
+    @include respond(phone) {
+      font-size: 5rem;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--m-silver);
+    margin-block: 2rem;
+  }
+
+  &_right {
+    overflow: hidden;
+    position: relative;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &_right-img {
+    display: grid;
+    border-radius: 20px;
+  }
+
+  &_right-img img {
+    width: 90%;
+    place-self: center;
+  }
+}
