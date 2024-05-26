@@ -2,7 +2,7 @@ import "./Contact.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import hello from "../../assets/davis-assets/hello.jpeg";
+import hello from "../../assets/davis-assets/hello1.jpg";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 

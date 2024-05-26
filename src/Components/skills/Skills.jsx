@@ -17,7 +17,7 @@ const Skills = () => {
 
       <div className="skills_container wrapper">
         {skillsInfo.map(({ name, Img }) => (
-          <div className="skills_card" key={name} data-aos="zoom-in-up">
+          <div className="skills_card " key={name} data-aos="zoom-in-up"  >
             <div className="skills_card-img">
               <img src={Img} alt="card " />
             </div>

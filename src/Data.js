@@ -5,7 +5,7 @@ import Icon4 from "./assets/davis-assets/icon-4.png";
 import Icon5 from "./assets/davis-assets/icon-5.png";
 import Icon6 from "./assets/davis-assets/icon-6.png";
 import Icon7 from "./assets/davis-assets/icon-7.png";
-
+import Icon8 from "./assets/davis-assets/icon-8.png";
 export const aboutInfo = [
   {
     name: "From",
@@ -56,6 +56,10 @@ export const skillsInfo = [
     Img: Icon7,
     name: "React Js",
   },
+  {
+    Img:Icon8,
+    name:"Node Js"
+  }
 ];
 
 export const eduInfo = [
@@ -63,13 +67,13 @@ export const eduInfo = [
     name: "Bachelor of Chemical Engineering ",
     year: "2022- present",
     ins: "Vellore Institute of Technology,Vellore",
-    des: "8.7 CGPA ",
+    des: "8.53 CGPA ",
   },
   {
     name: "Intermediate",
     year: "2021",
     ins: "Loyola High School, Patna",
-    des: "98%",
+    des: "87%",
   },
   {
     name: "Matriculation ",

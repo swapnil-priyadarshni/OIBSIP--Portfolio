@@ -27,7 +27,7 @@ const About = () => {
           <h2>Hello there ! I'm Swapnil Priyadarshni</h2>
           <h4>Web Developer</h4>
           <p>
-            I'm a second year Chemical Engineering student and a web Developer
+            I'm a pre-final year Chemical Engineering student and a web Developer
             with a strong focus on building user-friendly websites and a passion
             for crafting seamless digital experiences. Whether it's building
             responsive websites, implementing user-friendly interfaces, or

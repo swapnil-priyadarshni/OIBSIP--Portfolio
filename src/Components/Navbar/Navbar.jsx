@@ -21,13 +21,13 @@ const Navbar = () => {
               <a href="#"> Home</a>
             </li>
             <li onClick={() => setShowNav(false)}>
-              <a href="#"> About Me</a>
+              <a href="https://in.linkedin.com/in/swapnil-priyadarshni-9b3401259" target=" "> LinkedIn</a>
             </li>
             <li onClick={() => setShowNav(false)}>
-              <a href="#"> Skills</a>
+              <a href="https://github.com/swapnil-priyadarshni" target=" "> GitHub</a>
             </li>
             <li onClick={() => setShowNav(false)}>
-              <a href="#"> Resume</a>
+              <a href="https://drive.google.com/file/d/1Yx-_7aC0YMF0th-BW4-B-Ndga8Szj161/view?usp=drive_link" target=" "> Resume</a>
             </li>
             <li onClick={() => setShowNav(false)}>
               <a href="#"> Contact Me</a>
